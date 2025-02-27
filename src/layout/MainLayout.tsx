@@ -4,7 +4,7 @@ import Logo from "../images/Logo.png";
 const MainLayout: React.FC = ({ children }) => {
   return (
     <div>
-      <header className="w-screen bg-black h-10 py-5 px-7">
+      <header className="w-screen bg-black h-10 py-5 px-7 opacity-90">
         <img src={Logo}></img>
       </header>
       <div

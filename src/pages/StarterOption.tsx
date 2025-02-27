@@ -8,11 +8,7 @@ const Starter = () => {
     <MainLayout>
       <div className="text-center text-white flex-col flex mb-10">
         <span className="text-[100px]">Choose Your Starter!</span>
-        <span className="mt-10 text-[30px]">
-          "Every journey begins with a choice. Select a starter that represents
-          your <br /> path. As you complete activities, your starter will grow
-          and evolve, reflecting <br /> your real-world progress!"
-        </span>
+        <span className="mt-10 text-[30px]">asdfasdf</span>
       </div>
 
       <div className="relative w-[2000px] h-[1100px] justify-center items-center flex">
