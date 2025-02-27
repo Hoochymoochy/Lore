@@ -1,15 +1,18 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import Starter from "./pages/Starter";
 import reportWebVitals from "./reportWebVitals";
+import StarterOption from "./pages/StarterOption";
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(
+  document.getElementById("root") as HTMLElement
+);
+root.render(
   <React.StrictMode>
-    <Starter />
-  </React.StrictMode>,
-  document.getElementById("root")
+    <StarterOption />
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

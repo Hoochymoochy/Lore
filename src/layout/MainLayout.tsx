@@ -1,7 +1,11 @@
 import React from "react";
 import background from "../images/background.png";
 import Logo from "../images/Logo.png";
-const MainLayout: React.FC = ({ children }) => {
+
+interface MainLayoutProps {
+  children: React.ReactNode;
+}
+const MainLayout = ({ children }: MainLayoutProps) => {
   return (
     <div>
       <header className="w-screen bg-black h-10 py-5 px-7 opacity-90">

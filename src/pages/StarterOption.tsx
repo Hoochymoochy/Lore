@@ -1,26 +1,34 @@
 import MainLayout from "../layout/MainLayout";
-import StarterTab from "../images/StarterTab.png";
+import StarterTab from "../images/StarterTab2.png";
+import TabButton from "../components/Tab";
 import Card from "../components/Card";
 import CardImage from "../images/Card.png";
 
 const Starter = () => {
   return (
     <MainLayout>
-      <div className="text-center text-white flex-col flex mb-10">
-        <span className="text-[100px]">Choose Your Starter!</span>
-        <span className="mt-10 text-[30px]">asdfasdf</span>
-      </div>
-
-      <div className="relative w-[2000px] h-[1100px] justify-center items-center flex">
-        <img
-          src={StarterTab}
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-
-        <div className="relative flex space-x-56 z-10 justify-center">
-          <Card url={CardImage} />
-          <Card url={CardImage} />
-          <Card url={CardImage} />
+      <div className="flex gap-4 h-[2000px] w-screen justify-center items-center">
+        <div className="relative w-1/3 h-full justify-center items-center flex py-28">
+          <img src={StarterTab} className="absolute w-[80%] h-[90%]" />
+          <div className="relative z-10 space-y-5 text-white">
+            <div className="text-9xl mb-20">
+              Choose your <br /> focus
+            </div>
+            <div className="text-5xl whitespace-normal leading-normal">
+              As you complete activities, <br /> your starter will grow and
+              evolve, <br /> reflecting your real-world progress!"
+            </div>
+          </div>
+        </div>
+        <div className="w-1/3 h-[75%] justify-center flex">
+          <Card url={CardImage} disable={true} />
+        </div>
+        <div className="relative w-1/3 h-full justify-center items-center flex flex-col space-y-96">
+          <TabButton text="Programming & Development" />
+          <TabButton text="UI/UX Design" />
+          <TabButton text="Game Development" />
+          <TabButton text="Cybersecurity & Ethical Hacking" />
+          <TabButton text="Programming & Development" />
         </div>
       </div>
     </MainLayout>
